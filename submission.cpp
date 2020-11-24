@@ -25,7 +25,7 @@ int dynamicProg(vector<tuple<int, int>> v, int capacity){
     }
     
     
-    for(int i=0; i < v.size(); i++){
+    for(int i=0; i < int(v.size()); i++){
         
         tuple<int, int> current_item = v[i];
         int itemWeight = get<0>(current_item);
@@ -56,7 +56,7 @@ int main(int argc, char *argv[]) {
     ofstream outfile(argv[2]);
     int mode = stoi(argv[3]);
     
-    //cout.rdbuf(outfile.rdbuf());
+    cout.rdbuf(outfile.rdbuf());
 
     string line;
     string s1;
@@ -90,7 +90,7 @@ int main(int argc, char *argv[]) {
                     auto end = chrono::high_resolution_clock::now();
                     auto time_needed = chrono::duration_cast<chrono::milliseconds>(end - start).count();
 
-                    cout << input_size << " " << p << " " << time_needed << endl;   
+                    cout << "Dynamic Programming: " << input_size << " " << p << " " << time_needed << endl;   
                 }
                 vals.clear();
             }
