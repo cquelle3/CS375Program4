@@ -1,4 +1,4 @@
-P = submission
+P = program4
 CFLAGS = -Wall -Werror -g
 
 all: $(P)

@@ -1,2 +1,1 @@
-Dynamic Programming: 2 2750 0
-Dynamic Programming: 3 1000 0
+Dynamic Programming: 4 90 0
